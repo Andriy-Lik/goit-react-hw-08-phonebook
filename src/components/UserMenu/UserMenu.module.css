@@ -1,0 +1,37 @@
+.userMenuBox {
+    display: flex;
+}
+
+.userMenuText {
+    margin-right: 16px;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.userMenuIcon {
+    margin-right: 32px;
+    width: 30px;
+    height: 30px;
+}
+
+.userMenuIcon:hover * {
+    fill: #3f51b5;
+}
+
+.userMenuButton {
+    width: 120px;
+    height: 30px;
+    margin-left: auto;
+    padding: 0;
+    background-color: #3f51b5;
+    color: white;
+    border: 1px solid grey;
+    border-radius: 3px;
+
+    &:hover,
+    &:focus {
+        background-color: #303f9f;
+        scale: 1.05;
+    }
+}

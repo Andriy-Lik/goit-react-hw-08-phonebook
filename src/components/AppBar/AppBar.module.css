@@ -1,0 +1,12 @@
+.header {
+    margin-bottom: 16px;
+    padding: 16px 0;
+    border-bottom: 2px solid grey;
+    background-color: skyblue;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

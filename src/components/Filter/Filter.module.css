@@ -1,0 +1,25 @@
+.filterBox {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.filterLabel {
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    align-items: center;
+}
+
+.filterInput {
+    width: 200px;
+    height: 30px;
+    border: 2px solid grey;
+    border-radius: 3px;
+
+    &:hover,
+    &:focus {
+        border: 2px solid skyblue; 
+    }
+}

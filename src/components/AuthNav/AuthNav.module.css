@@ -1,0 +1,17 @@
+.authNavBox {
+    display: flex;
+    gap: 10px;
+}
+
+.authNavlink {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 700;
+    color: #2a363b;
+
+    &:hover,
+    &:focus {
+        scale: 1.05;
+    }
+}

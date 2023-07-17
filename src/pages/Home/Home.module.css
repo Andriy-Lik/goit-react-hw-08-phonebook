@@ -1,0 +1,15 @@
+.homeTitle {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.homeImg {
+    width: 400px;
+    height: 400px;
+
+    @media screen and (max-width: 429px) {
+        width: 100%;
+        height: 100%;   
+    }
+}

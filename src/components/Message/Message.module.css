@@ -1,0 +1,9 @@
+.messageBox {
+    margin-top: 10px;
+}
+
+.messageText {
+    font-weight: 600;
+    font-size: 24px;
+    color: red;
+}
