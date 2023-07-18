@@ -1,6 +1,5 @@
 import { BsBookHalf } from 'react-icons/bs';
 import Section from 'components/Section';
-import { ReactComponent as LogoAL } from '../../images/LogoAL.svg';
 import { ReactComponent as Phone } from '../../images/Phone.svg';
 import { ReactComponent as Email } from '../../images/Email.svg';
 import { ReactComponent as Telegram } from '../../images/Telegram.svg';
@@ -17,8 +16,7 @@ const Footer = () => {
                     
                     <p className={css.footerText}>
                         <BsBookHalf className={css.footerIconBook} />
-                        Phonebook by
-                        <LogoAL className={css.footerIconAL} />
+                        Phonebook
                     </p>
                     
                     <ul className={css.footerList}>
