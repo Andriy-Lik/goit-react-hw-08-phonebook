@@ -1,33 +1,57 @@
 .userMenuBox {
     display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+        justify-content: space-between;
+    }
+}
+
+.userMenuWrap {
+    display: flex;
+    align-items: center;
 }
 
 .userMenuText {
-    margin-right: 16px;
-    padding: 5px;
+    /* padding: 5px; */
     font-size: 16px;
     font-weight: 700;
+
+    @media screen and (max-width: 479px) {
+        margin-right: 6px;
+    }
+
+    @media screen and (min-width: 480px) {
+        margin-right: 16px;
+    }
 }
 
 .userMenuIcon {
-    margin-right: 32px;
     width: 30px;
     height: 30px;
-}
 
-.userMenuIcon:hover * {
-    fill: #3f51b5;
+    @media screen and (max-width: 479px) {
+        width: 25px;
+        height: 25px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-right: 32px;
+    }
+
+    &:hover * {
+        fill: #3f51b5;
+    }
 }
 
 .userMenuButton {
-    width: 120px;
+    width: 100px;
     height: 30px;
-    margin-left: auto;
     padding: 0;
     background-color: #3f51b5;
     color: white;
     border: 1px solid grey;
-    border-radius: 3px;
+    border-radius: 15px;
 
     &:hover,
     &:focus {

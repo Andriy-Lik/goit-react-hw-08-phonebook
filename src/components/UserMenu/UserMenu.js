@@ -11,8 +11,10 @@ const UserMenu = () => {
 
     return (
         <div className={css.userMenuBox}>
-            <p className={css.userMenuText}>Welcome {user.name}!</p>
-            <IconAvatar className={css.userMenuIcon} width="30" height="30" />
+            <div className={css.userMenuWrap}>
+                <p className={css.userMenuText}>Welcome {user.name}!</p>
+                <IconAvatar className={css.userMenuIcon} width="30" height="30" />
+            </div>
             <button className={css.userMenuButton} type="button" onClick={() => dispatch(logOutUser())}>Logout</button>
         </div>
     );
