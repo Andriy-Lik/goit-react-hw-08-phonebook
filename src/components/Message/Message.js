@@ -1,6 +1,6 @@
 import css from './Message.module.css';
 
-function Message() {
+const Message = () => {
     return (
         <div className={css.messageBox}>
             <p className={css.messageText}>PhoneBook is empty!!!</p>
