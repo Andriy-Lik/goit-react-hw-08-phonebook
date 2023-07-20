@@ -20,22 +20,26 @@ const Register = () => {
 
     return (
         <Section>
-            <form className={css.registerForm} onSubmit={handleSubmit} autoComplete="off">
-                <h2 className={css.registerTitle}>Registration</h2>
-                <label className={css.registerLabel}>
-                    User name
-                    <input className={css.registerInput} type="text" name="name" />
-                </label>
-                <label className={css.registerLabel}>
-                    Email
-                    <input className={css.registerInput} type="email" name="email" />
-                </label>
-                <label className={css.registerLabel}>
-                    Password
-                    <input className={css.registerInput} type="password" name="password" />
-                </label>
-                <button className={css.registerButton} type="submit">Register</button>
-            </form>
+            <div className={css.registerBox}>
+                <form className={css.registerForm} onSubmit={handleSubmit} autoComplete="off">
+                    <h2 className={css.registerTitle}>Registration</h2>
+                    <label className={css.registerLabel} htmlFor="name">
+                        Name
+                    </label>
+                    <input className={css.registerInput} id="name" type="text" name="name" placeholder="Ivan Ivanov" />
+                    
+                    <label className={css.registerLabel} htmlFor="email">
+                        Email
+                    </label>
+                    <input className={css.registerInput} id="email" type="email" name="email" placeholder="ivan123@mail.com" />
+                    
+                    <label className={css.registerLabel} htmlFor="password">
+                        Password
+                    </label>
+                    <input className={css.registerInput} id="password" type="password" name="password" placeholder="**********" />
+                    <button className={css.registerButton} type="submit">Register</button>
+                </form>
+            </div>
         </Section>
     );    
 };

@@ -1,12 +1,16 @@
 .authNavBox {
     display: flex;
-    gap: 10px;
+    gap: 20px;
+
+    @media screen and (max-width: 767px) {
+        justify-content: space-around;
+    }
 }
 
 .authNavlink {
     display: inline-block;
     text-decoration: none;
-    padding: 5px;
+    padding-bottom: 5px;
     font-weight: 700;
     color: #2a363b;
 

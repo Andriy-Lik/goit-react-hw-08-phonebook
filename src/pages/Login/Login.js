@@ -19,18 +19,22 @@ const Login = () => {
 
     return (
         <Section>
-            <form className={css.loginForm} onSubmit={handleSubmit} autoComplete="off">
-                <h2 className={css.loginTitle}>Log In</h2>
-                <label className={css.loginLabel}>
-                    Email
-                    <input className={css.loginInput} type="email" name="email" />
-                </label>
-                <label className={css.loginLabel}>
-                    Password
-                    <input className={css.loginInput} type="password" name="password" />
-                </label>
-                <button className={css.loginButton} type="submit">Log In</button>
-            </form>
+            <div className={css.loginBox}>
+                <form className={css.loginForm} onSubmit={handleSubmit} autoComplete="off">
+                    <h2 className={css.loginTitle}>Log In</h2>
+                    <label className={css.loginLabel}>
+                        Email
+                    </label>
+                    <input className={css.loginInput} type="email" name="email" placeholder="ivan123@mail.com" />
+                    
+                    <label className={css.loginLabel}>
+                        Password
+                    </label>
+                    <input className={css.loginInput} type="password" name="password" placeholder="**********" />
+
+                    <button className={css.loginButton} type="submit">Log In</button>
+                </form>
+            </div>
         </Section>
     );
 };
