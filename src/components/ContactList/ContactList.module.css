@@ -5,14 +5,16 @@
     list-style: none;
 
     @media screen and (max-width: 429px) {
-        width: 290px;
+        width: 100%;
     }
 }
 
 .contactListItem {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    padding: 3px;
+    border-radius: 5px;
 
     &:last-child {
         margin-bottom: 0;
@@ -20,7 +22,7 @@
 
     &:hover,
     &:focus {
-        background-color: skyblue;
+        background-color: #E0FFFF;
     }
 }
 

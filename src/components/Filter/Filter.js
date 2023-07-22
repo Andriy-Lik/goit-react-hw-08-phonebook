@@ -13,18 +13,18 @@ function Filter() {
 
     return (
         <div className={css.filterBox}>
-            <label className={css.filterLabel}>
-                <input
-                    className={css.filterInput}
-                    type="text"
-                    name="filter"
-                    pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-                    title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan" 
-                    value={filter} 
-                    onChange={changeFilter}
-                    placeholder="Find contacts by name" 
-                />
-            </label>
+            <label className={css.filterLabel} htmlFor="filter"></label>
+            <input
+                className={css.filterInput}
+                type="text"
+                name="filter"
+                id="filter"
+                pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+                title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan" 
+                value={filter} 
+                onChange={changeFilter}
+                placeholder="Find contacts by name" 
+            />
         </div>
     
     );

@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { deleteContacts } from '../../redux/Contacts/contactsOperations';
+import { deleteContacts, editContacts } from '../../redux/Contacts/contactsOperations';
 import { selectContacts } from '../../redux/Contacts/contactsSelectors';
 import { selectFilter } from '../../redux/Filter/filterSelectors';
 import { ReactComponent as Bin } from '../../images/Bin.svg';
@@ -14,6 +14,7 @@ const ContactList = () => {
     const dispatch = useDispatch();
 
     const onDelete = contactId => { dispatch(deleteContacts(contactId)) };
+    const onUpdate = contactId => { dispatch(editContacts(contactId)) };
 
     const normalizedFilter = filter.toLowerCase();
     const getVisibleContact = contacts.filter(contact => contact.name.toLowerCase().includes(normalizedFilter));
@@ -29,18 +30,13 @@ const ContactList = () => {
                             <span className={css.contactListNumber}>{contact.number}</span>
                         </p>
                         <div className={css.buttonBox}>
-                            <button className={css.contactListButton} type="button">
+                            <button className={css.contactListButton} type="button" onClick={() => onUpdate(contact.id)}>
                                 <Pencil className={css.contactListIcon} />
                             </button>
-                            <button 
-                                className={css.contactListButton}
-                                type="button" 
-                                onClick={() => onDelete(contact.id)} 
-                            >
+                            <button className={css.contactListButton} type="button" onClick={() => onDelete(contact.id)}>
                                 <Bin className={css.contactListIcon} />
                             </button>
                         </div>
-                        
                     </li>
                 ))}
             </ul>

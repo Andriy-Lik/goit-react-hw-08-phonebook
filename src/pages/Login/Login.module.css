@@ -15,8 +15,8 @@
     border: 2px solid grey;
     border-radius: 5px;
 
-    @media screen and (max-width: 479px) {
-        width: 290px;
+    @media screen and (max-width: 429px) {
+        width: 100%;
     }
 }
 
@@ -34,17 +34,13 @@
 }
 
 .loginInput {
-    width: 386px;
+    width: 100%;
     height: 30px;
     margin-bottom: 15px;
     padding: 0 5px;
     border: 2px solid grey;
     border-radius: 3px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    @media screen and (max-width: 479px) {
-        width: 276px;
-    }
 
     &:hover,
     &:focus {
