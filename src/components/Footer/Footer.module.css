@@ -36,7 +36,7 @@
     width: 1200px;   
 } */
 
-.footerText {
+.footerIconBox {
     display: flex;
     gap: 5px;
     align-items: center;
@@ -44,14 +44,25 @@
     color: #3f51b5;
 
     @media screen and (max-width: 767px) {
-        margin-bottom: 16px;
+        margin-bottom: 10px;
     }
 }
 
-.footerIconBook {
+.footerBookIcon {
     width: 30px;
     height: 25px;
     color: #3f51b5;
+}
+
+.footerTextBox {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: #3f51b5;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 10px;
+    }
 }
 
 .footerList {

@@ -14,9 +14,13 @@ const Footer = () => {
             <Section>
                 <div className={css.footerContainer}>
                     
-                    <p className={css.footerText}>
-                        <BsBookHalf className={css.footerIconBook} />
+                    <p className={css.footerIconBox}>
+                        <BsBookHalf className={css.footerBookIcon} />
                         Phonebook
+                    </p>
+                    
+                    <p className={css.footerTextBox}>
+                        Created by Andrii Likhoshva.
                     </p>
                     
                     <ul className={css.footerList}>
